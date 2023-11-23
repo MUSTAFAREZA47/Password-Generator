@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Password Generator</title>
+    <!-- Bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- External Style Link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container-fluid mt-4 data-bs-theme="light">
+      <div class="row align-items-center">
+        <div class="col-md-8 offset-md-5">
+          <div class="container text-light">
+            <h1 class="text-center">Password Generator</h1>
+            <div class="form-group mt-3">
+              <label for="alphabetCount">Number Of Alphabets:</label>
+              <input
+                type="number"
+                id="alphabetCount"
+                class="form-control"
+                min="1"
+                value="6"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="numberCount">Number Of Numbers:</label>
+              <input
+                type="number"
+                id="numberCount"
+                class="form-control"
+                min="1"
+                value="4"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="symbolCount">Number Of Symbols:</label>
+              <input
+                type="number"
+                id="symbolCount"
+                class="form-control me-2"
+                min="1"
+                value="2"
+              />
+            </div>
+            <button id="generate" class="btn btn-primary mt-3">
+              Generate Passwords
+            </button>
+            <br /><br />
+        </div>
+        <div id="passwords" class="col-md-8 offset-md-3 mt-3 text-light border-primary"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JS Script -->
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap JS Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
